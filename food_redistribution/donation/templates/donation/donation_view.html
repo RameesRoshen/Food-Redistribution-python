@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Donation View</title>
+</head>
+<body>
+	<center>
+		<h1>Donation View</h1>
+		<table border="1">
+			<tr>
+				<td>item</td>
+				<td>Org Name</td>
+				<td>Quantity</td>
+				<td>Location</td>
+				<td>Phone</td>
+			</tr>
+             {% for i in aa %}
+			<tr>
+				<td>{{ i.org_name }}</td>
+				<td>{{ i.quantity }}</td>
+				<td>{{ i.location}}</td>
+				<td>{{ i.phone }}</td>
+
+			</tr>
+             {% endfor %}
+		</table>
+	</center>
+</body>
+</html>

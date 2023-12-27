@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View</title>
+</head>
+<body>
+	<center>
+		<h1>Reply View</h1>
+		<table border="1">
+			<tr>
+				<td>Complaint</td>
+				<td>Reply</td>
+			</tr>
+            {% for i in aa %}
+			<tr>
+				<td>{{ i.complaint}}</td>
+				<td>
+                    {{ i.reply}}
+                </td>
+{#				<td><a href="">Reply</a></td>#}
+			</tr>
+             {% endfor %}
+		</table>
+	</center>
+</body>
+</html>

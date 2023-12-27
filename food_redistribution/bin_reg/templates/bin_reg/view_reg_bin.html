@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bin Reg View</title>
+</head>
+<body>
+	<center>
+		<h1>Bin Reg View</h1>
+		<table border="1">
+			<tr>
+				<td>Name</td>
+				<td>Location</td>
+				<td>Phone</td>
+			</tr>
+            {% for i in aa %}
+			<tr>
+				<td>{{ i.name}}</td>
+				<td>{{ i.location}}</td>
+				<td>{{ i.phone}}</td>
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+</body>
+</html>

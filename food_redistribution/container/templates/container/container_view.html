@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Container View</title>
+</head>
+<body>
+	<center>
+		<h1>Container View</h1>
+		<table border="1">
+			<tr>
+				<td>Container Name</td>
+				<td>Phone</td>
+				<td>Location</td>
+			</tr>
+            {% for i in aa %}
+			<tr>
+				<td>{{ i.container_name}}</td>
+				<td>{{ i.phone}}</td>
+				<td>{{ i.location}}</td>
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+</body>
+</html>

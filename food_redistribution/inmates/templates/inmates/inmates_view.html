@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inmates View</title>
+</head>
+<body>
+	<center>
+		<h1>Inmates View</h1>
+		<table border="1">
+			<tr>
+				<td>ID</td>
+				<td>Name</td>
+				<td>Address</td>
+			</tr>
+            {% for i in aa %}
+			<tr>
+				<td>{{ i.inmates_id}}</td>
+				<td>{{ i.name }}</td>
+				<td>{{ i.address }}</td>
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+</body>
+</html>

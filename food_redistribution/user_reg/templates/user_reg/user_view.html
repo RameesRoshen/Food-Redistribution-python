@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>view user</title>
+</head>
+<body>
+	<center>
+		<h1>View User Registration</h1>
+		<table border="1">
+			<tr>
+				<td>User id</td>
+				<td>Name</td>
+				<td>Address</td>
+				<td>Gender</td>
+				<td>Phone Number</td>
+			</tr>
+            {% for i in aa %}
+			<tr>
+				<td>{{ i.user_id }}</td>
+				<td>{{ i.name }}</td>
+				<td>{{ i.address }}</td>
+				<td>{{ i.gender }}</td>
+				<td>{{ i.phone }}</td>
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+</body>
+</html>

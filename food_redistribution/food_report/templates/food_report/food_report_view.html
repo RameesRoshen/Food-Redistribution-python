@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Report View</title>
+</head>
+<body>
+	<center>
+		<h1>Food Report View</h1>
+		<table border="1">
+			<tr>
+				<td>Item Name</td>
+				<td>Quantity</td>
+				<td>Org Name</td>
+			</tr>
+             {% for i in aa %}
+			<tr>
+				<td>{{ i.item_name }}</td>
+				<td>{{ i.quantity }}</td>
+				<td>{{ i.org_name }}</td>
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+</body>
+</html>
